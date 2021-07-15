@@ -4,24 +4,19 @@ This repository cotains the technical test to Wipro admission.
 
 Clone this repo and code your resolution to each challenge and send to your recruiter.
 
-This challenge consists in two steps:
+## How to do it
 
-## 1st step
+This challenge consists in 2 scenarios:
 
-Solve all functions challenge presents in directory `challenge-functions`.
+  * Functions: You should solve some issues using common `js`.
+  * React: You should make a view using React, the environment already configured, you should follow the instructions to make the view with due requisites
 
-
-## 2nd step
-
-Code a React view presents in directory `challenge-react`.
-
+Inside each directory challenge (`challenge-functions` and `challenge-functions`) have a description to how to solve them, go to and explore them.
 
 ## After complete
 
 Notify your recruiter that you solve all challenges.
 
-## Info
-
-More information about each challenge you will find inside the directories, so, go to explore them.
+## Note
 
 Don't forget about the limit time settled by your recruiter.
