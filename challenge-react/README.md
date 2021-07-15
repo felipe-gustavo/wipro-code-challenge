@@ -20,13 +20,13 @@ All the identification must be put in attribute `data-test-id`.
 
   * Have must an `input` to type a new task, this input will be identify as `task`;
 
-  * Have must a `button` to add this task to list, this button will be identify as `add-task`;
+  * Have must a `button` to add this task to list, this button will be identify as `add-task` and have a text "Add";
 
   * Have must a list (feel free to choose the element), sheltering all the task, this list must be identify as `list`;
 
   * Each element inside `list` element, will represent a task and your information, each element must be identify as `item-N`, the `N` must be index, inside the `item` have must...
 
-    * A `checkbox` element to conclude the task;
+    * A `input checkbox` element to conclude the task;
     
     * An element (of your choice) identified by `task-name` showing the name task;
     
@@ -34,15 +34,15 @@ All the identification must be put in attribute `data-test-id`.
 
   * Your system must be a container identifyied by `info` that must show 2 informations:
 
-    * 1st: an element identified by `total-rest-tasks` notifying how many task are left to complete the to do list, just numbers;
+    * 1st: an element identified by `total-remaining-tasks` notifying how many task are left to complete the to do list, just numbers;
 
-    * 2nd: an element identified by `total-complet-tasks` notifying how many task are completed, just numbers.
+    * 2nd: an element identified by `total-completed-tasks` notifying how many task are completed, just numbers.
 
 * **Rules**
 
-  * After add a new task, the `input` must be empty and focused to next type;
+  * After adds a new task, the `input` must be empty and focused to type new task;
 
-  * Both the `button` add task, and the type the `Enter` key in input must be adds the task;
+  * Both the `button` (`add-task`) and the type the `Enter` key in input must be adds the task;
 
   * The element `item-N`, (taks item), must have a special attribute called `data-test-status`, that should be filled by following rules:
 
@@ -52,16 +52,13 @@ All the identification must be put in attribute `data-test-id`.
 
     * If the task are removed, must be filled with `removed`.
 
-  * When the task are completed, the button and checkbox must be desapear but the task name must be stay in the same position (`task-name`);
+  * When the task are completed or removed, the checkbox must be disable, the button (`remove-task`) must be desapear but the task name must be stay in the same position (`task-name`);
 
-  * Your system must be prevent de duplicate task, you must use `trim` to certify this rule;
+  * Your system must be prevent de duplicate task, if inserts a duplicate tasks, just , you can use `trim` to certify this rule;
 
-  * Whem removes a task, this task must be stay in the list, like when complete the task, but it shouldn't not count as completed;
+  * When removes a task, it shouldn't not count as completed;
 
-  * The screen must be like the bellow image:
-
-![image](https://user-images.githubusercontent.com/55498940/124767042-d5d4e400-df0d-11eb-8f89-6ea71d963c5e.png)
-
+  * Check the template in directory `template/`.
 
 ## How to starts
 
@@ -73,7 +70,7 @@ The page will reload if you make edits. You will also see any lint errors in the
 
 ## How to test it
 
-Just run `yarn cypress:open`, and the cypress window, click in `todo-list.spec`.
+Just run `yarn cypress:open`, and the cypress window, click in `todo-list.spec` or run `yarn cypress:open` to run without interface.
 
 ## Important notes
 
