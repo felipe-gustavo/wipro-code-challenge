@@ -1,6 +1,6 @@
 # Functions challenge
 
-This challenge consists in four issues that you must to solve.
+This challenge consists in four functions that you must implement.
 
 ## How to start?
 
@@ -34,11 +34,11 @@ yarn test --test=smaller # This will run only "smaller" test
 
 * **File**: `src/getValueByPath.js`
 
-* **What should this do?** This challenge should get a value from object just having your path to go to on object.
+* **What should this do?** This function should get a value from object just by having your path to go to in the object.
 
 * **Entries**: An object or array and the path to gets the value.
 
-* **Output**: An object containing a field called `has` showing if this path exists in object, and a field called `value` having the value in gived path.
+* **Output**: An object containing a field called `has` showing if this path exists in object, and a field called `value` having the value in the given path.
 
 * **Examples**:
 ```js
@@ -51,7 +51,7 @@ getValueByPath({}, 'a.b.c.d') // this must return  { has: false, value: undefine
 
 * **File**: `src/smaller.js`
 
-* **What should this do?** This must return the amount of numbers that are smaller than each number of given array.
+* **What should this do?** This function must return the amount of numbers that are smaller than each number of given array.
 
 * **Entries**: An array of numbers.
 
@@ -68,11 +68,11 @@ smaller([3, 2, 1, 0]) // this must return  [3, 2, 1, 0]
 
 * **File**: `src/rankMostUsedLetters.js`
 
-* **What should this do?** This must made a raking with the three most used letters in a given phrase.
+* **What should this do?** This function must make a ranking with the three most used letters in a given phrase.
 
 * **Entries**: A phrase.
 
-* **Output**: An array containing the positions of the letters as a index, first must be index 0 and so son, each object must contain a field `letter`, having the letter in the position and field `times`, showing how many times this letter has been used. Your code must bring only the first three positions in the raking, if don't have more than 2 letters in phrase, then must bring the rest of positions as an empty object.
+* **Output**: An array containing the positions of the letters as a index, first must be index 0 and so son, each object must contain a field `letter`, having the letter in the position and field `times`, showing how many times this letter has been used. Your code must bring only the first three positions in the ranking, if don't have more than 2 letters in phrase, then must bring the rest of positions as an empty object.
 
 * **Examples**:
 ```js
@@ -107,17 +107,17 @@ must return:
 */
 ```
 
-* **Note**: You must desconsider letter case, your code must be to works only letters
+* **Note**: You solution must be case-insensitive and consider only letters
 
 ### 4th Challenge: generateFibonacci
 
 * **File**: `src/generateFibonacci.js`
 
-* **What should this do?** Should bring an array with fibonacci sequence due to given size.
+* **What should this do?** Must return an array with fibonacci sequence due to given size.
 
 * **Entries**: Fibonacci sequence size.
 
-* **Output**: An array containing the fibonacci sequence until that given size.
+* **Output**: An array containing the fibonacci sequence until the given size.
 
 * **Examples**:
 
